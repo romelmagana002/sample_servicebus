@@ -10,13 +10,13 @@ import sys
 a = str(sys.argv[1])
 b = str(sys.argv[2])
 #e = datetime.datetime.now()
-
+c = a + " in " + b
 
 if(a == 'prod' or a == 'uat'):
 
     def send_single_message(sender):
     # create a Service Bus message
-     message = ServiceBusMessage(a)
+     message = ServiceBusMessage(c)
     # message = ServiceBusMessage(b)
     # message = ServiceBusMessage(b)
   #  message = ServiceBusMessage(e.strftime ("%Y%m%d"))
